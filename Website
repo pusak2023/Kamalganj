@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUSAK | Public University Students Association of Kamalganj</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('your-photo.jpg') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #002d62;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PUSAK</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="#members">Members</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    PUBLIC UNIVERSITY STUDENTS ASSOCIATION OF KAMALGANJ
+  </div>
+
+  <section id="about">
+    <h2>About PUSAK</h2>
+    <p>PUSAK is a non-political voluntary organization formed by students of different public universities who are from Kamalganj Upazila. Our mission is to empower youth, support education, and contribute to community development through service, leadership, and collaboration.</p>
+  </section>
+
+  <section id="activities">
+    <h2>Our Activities</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Flood Relief</h3>
+        <p>Organizing emergency support and humanitarian activities during natural disasters.</p>
+      </div>
+      <div class="card">
+        <h3>Seminars & Webinars</h3>
+        <p>Hosting educational and career-focused sessions for students.</p>
+      </div>
+      <div class="card">
+        <h3>Community Support</h3>
+        <p>Working on social and community development initiatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="members">
+    <h2>Member Directory</h2>
+    <p>List of running members, ex-members, executive committee, and advisory board will appear here.</p>
+  </section>
+
+  <section id="photos">
+    <h2>Photos of Kamalganj</h2>
+    <p>Add your high-quality images related to Kamalganj here.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: your-email@example.com<br>Facebook Page: Your Link</p>
+  </section>
+
+  <footer>
+    © 2025 PUSAK — Public University Students Association of Kamalganj
+  </footer>
+</body>
+</html>
