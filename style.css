@@ -1,0 +1,439 @@
+/* ==============================
+   GOOGLE FONTS (PRODUCTION NOTE)
+   ============================== */
+/*
+⚠️ For best performance, move these to <head> as <link> tags.
+Keeping @import here for now as requested.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shoily+Bangla&display=swap');
+
+/* ==============================
+   RESET & BASE
+   ============================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0E1F1A;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Bangla Font */
+body.bangla {
+    font-family: 'Shoily Bangla', sans-serif;
+}
+
+/* ==============================
+   GLOBAL
+   ============================== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==============================
+   ACCESSIBILITY
+   ============================== */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #C2A24D;
+    outline-offset: 3px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ==============================
+   HEADER
+   ============================== */
+.site-header {
+    background: #1F3D2B;
+    padding: 1rem 0;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    text-decoration: underline;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #2F6B44;
+    min-width: 180px;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+}
+
+/* Dropdown links */
+.dropdown-content li a {
+    color: #fff;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover,
+.dropdown-content li a:focus {
+    background-color: #256033;
+}
+
+/* Show dropdown when active */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* For accessibility */
+.dropbtn:after {
+    content: "";
+}
+}
+
+.logo {
+    color: #C2A24D;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: #ffffff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+.btn {
+    background: #C2A24D;
+    color: #1F3D2B;
+    padding: 0.6rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: #b1923f;
+    transform: translateY(-1px);
+}
+
+/* ==============================
+   HERO
+   ============================== */
+.hero {
+    background: linear-gradient(135deg, #1F3D2B, #2F6B44);
+    color: #ffffff;
+    padding: 4rem 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-image img {
+    border-radius: 14px;
+}
+
+/* ==============================
+   BENEFITS
+   ============================== */
+.benefits {
+    background: #EEF5F1;
+    padding: 4rem 0;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* ==============================
+   REGIONS / ACTIVITIES
+   ============================== */
+.regions {
+    padding: 4rem 0;
+}
+
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.region-card {
+    background: #2F6B44;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* ==============================
+   WAYS TO CONTRIBUTE
+   ============================== */
+.ways {
+    background: #F6FBF8;
+    padding: 4rem 0;
+}
+
+.ways-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* ==============================
+   DIGNITARIES
+   ============================== */
+.dignitaries {
+    background: #EEF5F1;
+    padding: 4rem 0;
+}
+
+.dignitary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.dignitary-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.dignitary-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #C2A24D;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+/* ==============================
+   CTA
+   ============================== */
+.cta {
+    background: #1F3D2B;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.site-footer {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: Poppins, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Brand Column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.download-text {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  background: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #38bdf8;
+  color: #000;
+}
+
+/* Footer Columns */
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Contact */
+.contact-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #cbd5f5;
+}
+
+.contact-item i {
+  color: #e4edf4;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  border-top: 1px solid #e4edf4;
+  margin-top: 40px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 900px) {
+    .hero-grid,
+    .benefit-grid,
+    .region-grid,
+    .ways-list,
+    .dignitary-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
